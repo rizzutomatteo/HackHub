@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.time.LocalDateTime;
 
 public class Sottomissione {
@@ -28,6 +30,7 @@ public class Sottomissione {
         return this.valutazione;
     }
 
+    @JsonIgnore
     public Iscrizione getIscrizione() {
         return iscrizione;
     }

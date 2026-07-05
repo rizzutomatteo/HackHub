@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Incarico {
 
     private final Utente utente;
@@ -16,6 +18,7 @@ public class Incarico {
         return utente;
     }
 
+    @JsonIgnore
     public Hackathon getHackathon() {
         return hackathon;
     }

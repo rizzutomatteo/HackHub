@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Appartenenza {
 
     private final Utente utente;
@@ -16,6 +18,7 @@ public class Appartenenza {
         return utente;
     }
 
+    @JsonIgnore
     public Team getTeam() {
         return team;
     }

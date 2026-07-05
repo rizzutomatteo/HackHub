@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.adapter;
 
+import org.springframework.stereotype.Component;
+
 import it.unicam.cs.ids.hackhub.entity.PropostaCall;
 
 import java.time.LocalDateTime;
@@ -8,6 +10,7 @@ import java.time.LocalDateTime;
 // CalendarGateway (Target) di cui la piattaforma ha bisogno. Il Client (ServiceCall) usa la
 // porta; l'Adapter traduce le chiamate verso il Calendar. confermaPrenotazione estrae dalla
 // PropostaCall il riferimentoPrenotazione ottenuto in fase di riservaSlot.
+@Component
 public class AdapterCalendar implements CalendarGateway {
 
     private final Calendar calendar;

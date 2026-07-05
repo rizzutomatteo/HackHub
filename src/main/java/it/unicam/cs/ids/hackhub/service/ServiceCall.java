@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.adapter.CalendarGateway;
 import it.unicam.cs.ids.hackhub.entity.Incarico;
 import it.unicam.cs.ids.hackhub.entity.PropostaCall;
@@ -15,6 +17,7 @@ import java.time.LocalDateTime;
 // Creator della PropostaCall. Dipende SOLO dalla porta CalendarGateway (pattern Adapter);
 // usa l'Observer (ServiceNotifiche) per avvisare il team/il Mentore. Information Expert:
 // lo stato della PropostaCall e' letto dall'entita' stessa.
+@Service
 public class ServiceCall {
 
     private final RepoPropostaCall repoProposta;

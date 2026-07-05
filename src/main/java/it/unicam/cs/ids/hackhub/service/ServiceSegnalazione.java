@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.entity.Hackathon;
 import it.unicam.cs.ids.hackhub.entity.Incarico;
 import it.unicam.cs.ids.hackhub.entity.RuoloStaff;
@@ -14,6 +16,7 @@ import java.util.List;
 // Control (GRASP Controller) della governance (UC17 Segnala Team, UC18 Gestisci Segnalazione).
 // Creator della Segnalazione. Usa l'Observer (ServiceNotifiche) per avvisare l'Organizzatore.
 // Information Expert / scope via Incarico: il Mentore segnala solo i team dei propri hackathon.
+@Service
 public class ServiceSegnalazione {
 
     private final RepoSegnalazione repoSegnalazione;

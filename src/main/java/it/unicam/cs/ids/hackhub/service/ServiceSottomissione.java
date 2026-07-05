@@ -1,9 +1,12 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.entity.Iscrizione;
 import it.unicam.cs.ids.hackhub.entity.Sottomissione;
 import it.unicam.cs.ids.hackhub.repository.RepoSottomissione;
 
+@Service
 public class ServiceSottomissione {
 
     private final RepoSottomissione repoSottomissione;

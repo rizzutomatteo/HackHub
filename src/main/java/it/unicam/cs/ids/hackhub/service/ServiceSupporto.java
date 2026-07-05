@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.entity.Hackathon;
 import it.unicam.cs.ids.hackhub.entity.RichiestaSupporto;
 import it.unicam.cs.ids.hackhub.entity.Team;
@@ -11,6 +13,7 @@ import java.util.List;
 
 // Control (GRASP Controller) del supporto (UC11 Richiede Supporto, UC12 Visualizza Richieste).
 // Creator della RichiestaSupporto. Usa l'Observer (ServiceNotifiche) per avvisare i Mentori.
+@Service
 public class ServiceSupporto {
 
     private final RepoRichiestaSupporto repoRichiesta;

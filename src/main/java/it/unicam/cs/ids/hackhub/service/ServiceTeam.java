@@ -1,10 +1,13 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.entity.Team;
 import it.unicam.cs.ids.hackhub.entity.Utente;
 import it.unicam.cs.ids.hackhub.repository.RepoTeam;
 import it.unicam.cs.ids.hackhub.repository.RepoUtente;
 
+@Service
 public class ServiceTeam {
 
     private final RepoUtente repoUtente;

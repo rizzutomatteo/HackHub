@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.entity.Invito;
 import it.unicam.cs.ids.hackhub.entity.Iscrizione;
 import it.unicam.cs.ids.hackhub.entity.StatoInvito;
@@ -10,6 +12,7 @@ import it.unicam.cs.ids.hackhub.repository.RepoIscrizione;
 import it.unicam.cs.ids.hackhub.repository.RepoTeam;
 import it.unicam.cs.ids.hackhub.repository.RepoUtente;
 
+@Service
 public class ServiceInvito {
 
     private final RepoInvito repoInvito;

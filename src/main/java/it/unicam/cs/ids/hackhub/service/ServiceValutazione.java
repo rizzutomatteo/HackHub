@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.entity.Hackathon;
 import it.unicam.cs.ids.hackhub.entity.Incarico;
 import it.unicam.cs.ids.hackhub.entity.RuoloStaff;
@@ -11,6 +13,7 @@ import it.unicam.cs.ids.hackhub.repository.RepoValutazione;
 
 import java.util.List;
 
+@Service
 public class ServiceValutazione {
 
     private final RepoSottomissione repoSottomissione;

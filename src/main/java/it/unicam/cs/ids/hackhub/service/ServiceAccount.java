@@ -1,10 +1,13 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.entity.Utente;
 import it.unicam.cs.ids.hackhub.repository.RepoUtente;
 
 // Control (GRASP Controller) dell'accesso (UC19 Registrazione, UC20 Autenticazione). Creator dell'Utente.
 // Autenticazione "sottile" (D4): credenziali minime; niente hashing robusto/sessioni/token (fuori scope).
+@Service
 public class ServiceAccount {
 
     private final RepoUtente repoUtente;

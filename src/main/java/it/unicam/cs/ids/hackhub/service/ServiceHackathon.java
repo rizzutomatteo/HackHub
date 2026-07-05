@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.entity.Hackathon;
 import it.unicam.cs.ids.hackhub.entity.Incarico;
 import it.unicam.cs.ids.hackhub.entity.RuoloStaff;
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+@Service
 public class ServiceHackathon {
 
     private final RepoHackathon repoHackathon;

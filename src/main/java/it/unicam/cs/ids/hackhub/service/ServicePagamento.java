@@ -1,5 +1,7 @@
 package it.unicam.cs.ids.hackhub.service;
 
+import org.springframework.stereotype.Service;
+
 import it.unicam.cs.ids.hackhub.adapter.PaymentGateway;
 import it.unicam.cs.ids.hackhub.entity.Hackathon;
 import it.unicam.cs.ids.hackhub.entity.Pagamento;
@@ -12,6 +14,7 @@ import it.unicam.cs.ids.hackhub.repository.RepoPagamento;
 // Dipende SOLO dalla porta PaymentGateway (pattern Adapter, gemello di CalendarGateway): il Sistema
 // di Pagamento esterno e' raggiunto solo via adapter. Information Expert: vincitore/montepremi letti
 // dall'Hackathon. Idempotenza (2a): al piu' un Pagamento "Completato" per hackathon.
+@Service
 public class ServicePagamento {
 
     private final RepoPagamento repoPagamento;

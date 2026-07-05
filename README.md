@@ -12,7 +12,7 @@ HackHub è un sistema gestionale per hackathon che permette di coordinare team, 
 - **Linguaggio:** Java
 - **Framework:** Spring Boot (migrazione prevista)
 - **Architettura:** API REST / CLI
-- **Pattern utilizzati:** [Inserisci qui i 2+ pattern scelti, es. Factory, Strategy, Observer]
+- **Pattern utilizzati:** Observer, State, Adapter
 
 ## 🏗️ Struttura del Progetto
 Il progetto è diviso in due fasi:
